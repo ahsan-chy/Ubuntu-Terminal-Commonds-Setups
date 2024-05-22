@@ -127,6 +127,177 @@ Here are some commonly used Ubuntu commands:
 . 
 
 
+# Ubuntu setup and packages install
+
+- Google Chrome
+- Node JS
+- NVM
+- VS Code
+- Discord
+- Postman
+- Wrap
+- Docker
+- 
+
+
+### Node JS
+
+[Download Node.js the way you want](https://nodejs.org/en/download/package-manager)
+
+
+```javascript
+sudo apt update
+
+&
+
+sudo apt install curl
+```
+
+```javascript
+# installs nvm (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+**Close the terminal and reopen and run below commonds**
+
+```javascript
+# download and install Node.js
+nvm install 20
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.13.1`
+
+# verifies the right NPM version is in the environment
+npm -v # should print `10.5.2`
+```
+
+
+- While installing packages first time issues are following. 
+
+
+### Yarn - Install and inital setup 
+
+```javascript
+npm install --global yarn
+
+yarn --version
+```
+
+```javascript
+
+```
+
+## NVM
+
+### [Video Link](https://youtu.be/RDScvojqAio)
+
+[nvm Link to download NVM](https://github.com/coreybutler/nvm-windows#install-nvm-windows)
+
+
+How to setup NVM
+
+- First open **Gitbash** / **Window powershell(Admin)** then run following commonds
+```javascript
+nvm current 
+
+nvm on 
+
+nvm ls 
+
+nvm install 18.16.0
+
+nvm use 18.16.0
+
+```
+
+Install version
+```javascript
+nvm install <version>
+nvm install 16.19.1
+nvm install 18.16.0
+```
+
+Check Current Version
+```javascript
+nvm current
+```
+
+Use nvm version
+```javascript
+nvm use <version>
+nvm use 18.16.0
+```
+
+Set Default nvm
+```javascript
+nvm alias default 14
+
+```
+
+
+
+[NVM Link](https://github.com/nvm-sh/nvm)
+
+
+## NVS (Node Version Switcher)
+
+
+[NVS Link](https://github.com/jasongin/nvs)
+
+
+### Postman 
+
+```javascript
+sudo snap install postman
+```
+
+### Git & Github
+
+- [git install](https://git-scm.com/download/linux)
+
+```javascript
+sudo apt-get install git
+```
+
+
+- For Github you need to follow these commonds 
+
+
+```javascript
+ssh-keygen -t rsa -b 4096 -C "ahsaniqbal@gmail.com"
+```
+Enter Enter Enter
+
+```javascript
+eval $(ssh-agent -s)
+```
+
+```javascript
+ssh-add
+```
+
+- Get the ssh key
+```javascript
+cat ~/.ssh/id_rsa.pub
+```
+
+- Copy the ssh key and paste it in github.com and save it.
+
+
+
+#### Setup username and email in local folder or globally. 
+
+```javascript
+git config user.name "ahsan-"
+git config user.email "ahsaniqbal@aleh.tech"
+```
+
+
+
+
+
+
+
 ## VS Code Install
 
 Step1: 
